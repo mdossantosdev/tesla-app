@@ -11,8 +11,9 @@ struct CustomDivider: View {
     var body: some View {
         Rectangle()
             .frame(maxWidth: .infinity)
-            .frame(height: 0.5)
-            .background(Color.white.opacity(0.1))
+            .frame(height: 0.25)
+            .background(Color.white)
+            .opacity(0.1)
     }
 }
 

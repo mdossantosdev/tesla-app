@@ -11,10 +11,12 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             ScrollView {
-                VStack {
+                VStack(spacing: 20) {
                     HomeHeader()
                     
                     CustomDivider()
+                    
+                    CarSection()
                 }
                 .padding()
             }
