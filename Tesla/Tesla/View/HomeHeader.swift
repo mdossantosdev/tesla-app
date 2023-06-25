@@ -23,17 +23,25 @@ struct HomeHeader: View {
                 Text("Mach Five")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
             }
             
             Spacer()
             
-            HStack {}
+            HStack {
+                GeneralButton(icon: "lock.fill")
+                GeneralButton(icon: "gear")
+            }
         }
     }
 }
 
 struct HomeHeader_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeader()
+        ZStack {
+            Color("DarkGray").ignoresSafeArea()
+            
+            HomeHeader().padding()
+        }
     }
 }
