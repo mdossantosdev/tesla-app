@@ -17,6 +17,9 @@ struct ContentView: View {
             
             VoiceCommandButton()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("DarkGray"))
+        .foregroundColor(Color.white)
     }
 }
 
