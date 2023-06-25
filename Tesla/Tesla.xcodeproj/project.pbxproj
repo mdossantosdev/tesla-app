@@ -14,6 +14,7 @@
 		49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206722A4886E6005014D4 /* VoiceCommandButton.swift */; };
 		49A206762A488D78005014D4 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206752A488D78005014D4 /* HomeHeader.swift */; };
 		49A206782A489210005014D4 /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206772A489210005014D4 /* GeneralButton.swift */; };
+		49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206792A489652005014D4 /* CustomDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		49A206722A4886E6005014D4 /* VoiceCommandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandButton.swift; sourceTree = "<group>"; };
 		49A206752A488D78005014D4 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
 		49A206772A489210005014D4 /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
+		49A206792A489652005014D4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				49A206722A4886E6005014D4 /* VoiceCommandButton.swift */,
 				49A206772A489210005014D4 /* GeneralButton.swift */,
+				49A206792A489652005014D4 /* CustomDivider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				49A206642A486D07005014D4 /* ContentView.swift in Sources */,
 				49A206782A489210005014D4 /* GeneralButton.swift in Sources */,
+				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
 				49A206622A486D07005014D4 /* TeslaApp.swift in Sources */,

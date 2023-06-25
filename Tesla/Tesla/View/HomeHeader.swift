@@ -33,6 +33,7 @@ struct HomeHeader: View {
                 GeneralButton(icon: "gear")
             }
         }
+        .padding(.top)
     }
 }
 
