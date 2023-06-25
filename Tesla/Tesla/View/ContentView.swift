@@ -10,6 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
+            ScrollView {
+                HomeHeader()
+                    .padding()
+            }
+            
             VoiceCommandButton()
         }
     }
