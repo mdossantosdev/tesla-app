@@ -16,7 +16,12 @@ struct CategoryView: View {
             CategoryHeader(title: title, showEdit: showEdit)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {}
+                HStack(alignment: .top, spacing: 10) {
+                    ActionButton(icon: "bolt.fill", label: "Charging")
+                    ActionButton(icon: "fanblades.fill", label: "Fan On")
+                    ActionButton(icon: "play.fill", label: "Media Controls")
+                    ActionButton(icon: "bolt.car.fill", label: "Close Charge Port")
+                }
             }
         }
     }

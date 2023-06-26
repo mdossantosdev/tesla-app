@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack(spacing: 10) {
                     HomeHeader()
                     CustomDivider()
                     CarSection()
@@ -19,6 +19,7 @@ struct ContentView: View {
                     CategoryView(title: "Quick Shortcuts", showEdit: true)
                     CustomDivider()
                     CategoryView(title: "Recent Actions")
+                    CustomDivider()
                 }
                 .padding()
             }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E126E2A499F5F00E438CD /* CategoryHeader.swift */; };
 		494E12732A49B28B00E438CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12722A49B28B00E438CD /* CategoryView.swift */; };
+		494E12752A49B84900E438CD /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12742A49B84900E438CD /* ActionButton.swift */; };
 		49A206622A486D07005014D4 /* TeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206612A486D07005014D4 /* TeslaApp.swift */; };
 		49A206642A486D07005014D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206632A486D07005014D4 /* ContentView.swift */; };
 		49A206662A486D08005014D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A206652A486D08005014D4 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		494E126E2A499F5F00E438CD /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 		494E12722A49B28B00E438CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		494E12742A49B84900E438CD /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		49A2065E2A486D07005014D4 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A206612A486D07005014D4 /* TeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaApp.swift; sourceTree = "<group>"; };
 		49A206632A486D07005014D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				49A206722A4886E6005014D4 /* VoiceCommandButton.swift */,
 				49A206772A489210005014D4 /* GeneralButton.swift */,
 				49A206792A489652005014D4 /* CustomDivider.swift */,
+				494E12742A49B84900E438CD /* ActionButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */,
 				49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */,
 				494E12732A49B28B00E438CD /* CategoryView.swift in Sources */,
+				494E12752A49B84900E438CD /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
