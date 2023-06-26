@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryHeader: View {
     let title: String
-    var showEdit: Bool = false
+    var showEdit: Bool
     
     var body: some View {
         VStack {
@@ -33,6 +33,6 @@ struct CategoryHeader: View {
 
 struct CategoryHeader_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHeader(title: "Quick Shortcuts")
+        CategoryHeader(title: "Quick Shortcuts", showEdit: true)
     }
 }
