@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CarSection: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 5) {
             HStack(alignment: .center) {
                 HStack {
                     Image(systemName: "battery.75")
@@ -29,6 +29,10 @@ struct CarSection: View {
                         .foregroundColor(Color.gray)
                 }
             }
+            
+            Image("model3")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
         }
     }
 }

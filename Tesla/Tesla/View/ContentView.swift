@@ -13,10 +13,9 @@ struct ContentView: View {
             ScrollView {
                 VStack(spacing: 20) {
                     HomeHeader()
-                    
                     CustomDivider()
-                    
                     CarSection()
+                    CustomDivider()
                 }
                 .padding()
             }
