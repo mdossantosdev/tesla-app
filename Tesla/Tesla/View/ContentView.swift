@@ -16,6 +16,9 @@ struct ContentView: View {
                     CustomDivider()
                     CarSection()
                     CustomDivider()
+                    CategoryHeader(title: "Quick Shortcuts", showEdit: true)
+                    CustomDivider()
+                    CategoryHeader(title: "Recent Actions")
                 }
                 .padding()
             }
