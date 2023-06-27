@@ -10,6 +10,7 @@ import SwiftUI
 struct CategoryView: View {
     let title: String
     var showEdit: Bool = false
+    var actionItems: [ActionItem]
     
     var body: some View {
         VStack {
@@ -17,10 +18,9 @@ struct CategoryView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
-                    ActionButton(icon: "bolt.fill", label: "Charging")
-                    ActionButton(icon: "fanblades.fill", label: "Fan On")
-                    ActionButton(icon: "play.fill", label: "Media Controls")
-                    ActionButton(icon: "bolt.car.fill", label: "Close Charge Port")
+                    ForEach(actionItems, id: \.self) { item in
+                        ActionButton(icon: item.icon, label: item.label)
+                    }
                 }
             }
         }
@@ -29,6 +29,6 @@ struct CategoryView: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView(title: "Quick Shortcuts", showEdit: false)
+        CategoryView(title: "Quick Shortcuts", showEdit: false, actionItems: quickShortcuts)
     }
 }

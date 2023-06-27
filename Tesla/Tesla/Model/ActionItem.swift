@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ActionItem {
+struct ActionItem: Hashable {
     let icon: String
     let label: String
 }
