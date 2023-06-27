@@ -10,6 +10,7 @@
 		494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E126E2A499F5F00E438CD /* CategoryHeader.swift */; };
 		494E12732A49B28B00E438CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12722A49B28B00E438CD /* CategoryView.swift */; };
 		494E12752A49B84900E438CD /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12742A49B84900E438CD /* ActionButton.swift */; };
+		494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12792A4A2FF800E438CD /* ActionItem.swift */; };
 		49A206622A486D07005014D4 /* TeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206612A486D07005014D4 /* TeslaApp.swift */; };
 		49A206642A486D07005014D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206632A486D07005014D4 /* ContentView.swift */; };
 		49A206662A486D08005014D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A206652A486D08005014D4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		494E126E2A499F5F00E438CD /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 		494E12722A49B28B00E438CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		494E12742A49B84900E438CD /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		494E12792A4A2FF800E438CD /* ActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
 		49A2065E2A486D07005014D4 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A206612A486D07005014D4 /* TeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaApp.swift; sourceTree = "<group>"; };
 		49A206632A486D07005014D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494E12782A4A2FC900E438CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				494E12792A4A2FF800E438CD /* ActionItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		49A206552A486D07005014D4 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				49A2066F2A48863C005014D4 /* App */,
+				494E12782A4A2FC900E438CD /* Model */,
 				49A206712A488685005014D4 /* Components */,
 				49A206742A4888F1005014D4 /* View */,
 				49A206652A486D08005014D4 /* Assets.xcassets */,
@@ -187,6 +198,7 @@
 			files = (
 				49A206642A486D07005014D4 /* ContentView.swift in Sources */,
 				49A206782A489210005014D4 /* GeneralButton.swift in Sources */,
+				494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */,
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
