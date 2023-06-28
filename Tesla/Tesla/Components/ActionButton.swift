@@ -14,6 +14,7 @@ struct ActionButton: View {
     var body: some View {
         VStack(alignment: .center) {
             GeneralButton(icon: icon)
+            
             Text(label)
                 .font(.system(size: 12, weight: .semibold, design: .default))
                 .multilineTextAlignment(.center)
