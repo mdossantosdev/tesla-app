@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             ScrollView {
-                VStack(spacing: 10) {
+                VStack(spacing: 16) {
                     HomeHeader()
                     CustomDivider()
                     CarSection()
@@ -25,6 +25,7 @@ struct ContentView: View {
                         title: "Recent Actions",
                         actionItems: recentActions)
                     CustomDivider()
+                    AllSettings()
                 }
                 .padding()
             }
