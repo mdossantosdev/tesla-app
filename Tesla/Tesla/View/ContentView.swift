@@ -19,11 +19,13 @@ struct ContentView: View {
                     CategoryView(
                         title: "Quick Shortcuts",
                         showEdit: true,
-                        actionItems: quickShortcuts)
+                        actionItems: quickShortcuts
+                    )
                     CustomDivider()
                     CategoryView(
                         title: "Recent Actions",
-                        actionItems: recentActions)
+                        actionItems: recentActions
+                    )
                     CustomDivider()
                     AllSettings()
                 }

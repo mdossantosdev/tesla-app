@@ -11,6 +11,34 @@ struct AllSettings: View {
     var body: some View {
         VStack {
             CategoryHeader(title: "All Settings", showEdit: false)
+            LazyVGrid(columns: [GridItem(.fixed(170)), GridItem(.fixed(170))]) {
+                SettingCard(
+                    icon: "car.fill",
+                    label: "Controls",
+                    message: "Car Locked"
+                )
+                SettingCard(
+                    icon: "fanblades.fill",
+                    label: "Climate",
+                    message: "Interior 22°C",
+                    backgroundColor: Color("Blue")
+                )
+                SettingCard(
+                    icon: "location.fill",
+                    label: "Location",
+                    message: "Paris"
+                )
+                SettingCard(
+                    icon: "shield.checkerboard",
+                    label: "Security",
+                    message: "0 event detected"
+                )
+                SettingCard(
+                    icon: "sparkles",
+                    label: "Upgrade",
+                    message: "3 upgrades available"
+                )
+            }
         }
     }
 }

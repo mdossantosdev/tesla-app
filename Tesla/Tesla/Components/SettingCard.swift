@@ -10,20 +10,25 @@ import SwiftUI
 struct SettingCard: View {
     let icon: String
     let label: String
-    let message: String = ""
+    var message: String
     var backgroundColor: Color = Color.white.opacity(0.05)
     
     var body: some View {
-        HStack {
+        HStack(alignment: .center, spacing: 0) {
             Image(systemName: icon)
+                .frame(width: 26, height: 26)
             
-            VStack {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(label)
+                    .font(.system(size: 16, weight: .semibold, design: .default))
+                    .fixedSize(horizontal: true, vertical: true)
                 
-                if !message.isEmpty {
-                    Text(message)
-                }
+                Text(message.uppercased())
+                    .font(.system(size: 8, weight: .medium, design: .default))
+                    .lineLimit(1)
             }
+            .padding(.leading, 4)
+            .frame(maxWidth: .infinity, alignment: .leading)
             
             Spacer()
             
@@ -33,6 +38,7 @@ struct SettingCard: View {
         .foregroundColor(Color.white)
         .background(backgroundColor)
         .clipShape(RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.white.opacity(0.1), lineWidth: 0.5))
     }
 }
 
@@ -41,7 +47,7 @@ struct SettingCard_Previews: PreviewProvider {
         ZStack {
             Color("DarkGray").ignoresSafeArea()
             
-            SettingCard(icon: "car.fill", label: "Controls")
+            SettingCard(icon: "car.fill", label: "Controls", message: "Car Locked")
         }
     }
 }
