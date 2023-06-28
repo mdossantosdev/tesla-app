@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		494C71F42A4CA6EE0057A27E /* AllSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F32A4CA6EE0057A27E /* AllSettings.swift */; };
 		494C71F62A4CAE070057A27E /* SettingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F52A4CAE070057A27E /* SettingCard.swift */; };
+		494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F72A4CE43D0057A27E /* ReorderButton.swift */; };
 		494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E126E2A499F5F00E438CD /* CategoryHeader.swift */; };
 		494E12732A49B28B00E438CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12722A49B28B00E438CD /* CategoryView.swift */; };
 		494E12752A49B84900E438CD /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12742A49B84900E438CD /* ActionButton.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		494C71F32A4CA6EE0057A27E /* AllSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettings.swift; sourceTree = "<group>"; };
 		494C71F52A4CAE070057A27E /* SettingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCard.swift; sourceTree = "<group>"; };
+		494C71F72A4CE43D0057A27E /* ReorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderButton.swift; sourceTree = "<group>"; };
 		494E126E2A499F5F00E438CD /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 		494E12722A49B28B00E438CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		494E12742A49B84900E438CD /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				49A206792A489652005014D4 /* CustomDivider.swift */,
 				494E12742A49B84900E438CD /* ActionButton.swift */,
 				494C71F52A4CAE070057A27E /* SettingCard.swift */,
+				494C71F72A4CE43D0057A27E /* ReorderButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A206642A486D07005014D4 /* ContentView.swift in Sources */,
+				494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */,
 				49A206782A489210005014D4 /* GeneralButton.swift in Sources */,
 				494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */,
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,

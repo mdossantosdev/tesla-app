@@ -28,6 +28,7 @@ struct ContentView: View {
                     )
                     CustomDivider()
                     AllSettings()
+                    ReorderButton()
                 }
                 .padding()
             }
