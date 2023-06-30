@@ -20,8 +20,7 @@ struct SettingCard: View {
             
             VStack(alignment: .leading, spacing: 2) {
                 Text(label)
-                    .font(.system(size: 16, weight: .semibold, design: .default))
-                    .fixedSize(horizontal: true, vertical: true)
+                    .font(.system(size: 14, weight: .semibold, design: .default))
                 
                 Text(message.uppercased())
                     .font(.system(size: 8, weight: .medium, design: .default))

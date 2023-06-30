@@ -9,35 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ScrollView {
-                VStack(spacing: 16) {
-                    HomeHeader()
-                    CustomDivider()
-                    CarSection()
-                    CustomDivider()
-                    CategoryView(
-                        title: "Quick Shortcuts",
-                        showEdit: true,
-                        actionItems: quickShortcuts
-                    )
-                    CustomDivider()
-                    CategoryView(
-                        title: "Recent Actions",
-                        actionItems: recentActions
-                    )
-                    CustomDivider()
-                    AllSettings()
-                    ReorderButton()
+        NavigationStack {
+            ZStack {
+                ScrollView {
+                    VStack(spacing: 16) {
+                        HomeHeader()
+                        CustomDivider()
+                        CarSection()
+                        CustomDivider()
+                        CategoryView(
+                            title: "Quick Shortcuts",
+                            showEdit: true,
+                            actionItems: quickShortcuts
+                        )
+                        CustomDivider()
+                        CategoryView(
+                            title: "Recent Actions",
+                            actionItems: recentActions
+                        )
+                        CustomDivider()
+                        AllSettings()
+                        ReorderButton()
+                    }
+                    .padding()
                 }
-                .padding()
+                
+                VoiceCommandButton()
             }
-            
-            VoiceCommandButton()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("DarkGray"))
+            .foregroundColor(Color.white)
+            .navigationTitle("Tesla")
+            .toolbar(.hidden)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("DarkGray"))
-        .foregroundColor(Color.white)
     }
 }
 
