@@ -24,3 +24,11 @@ let recentActions: [ActionItem] = [
     ActionItem(icon: "fanblades", label: "Fan Off"),
     ActionItem(icon: "person.fill.viewfinder", label: "Summon"),
 ]
+
+let carControls: [ActionItem] = [
+    ActionItem(icon: "flashlight.on.fill", label: "Flash"),
+    ActionItem(icon: "speaker.wave.3.fill", label: "Honk"),
+    ActionItem(icon: "key.horizontal.fill", label: "Start"),
+    ActionItem(icon: "arrow.up.bin", label: "Front Trunk"),
+    ActionItem(icon: "arrow.up.square", label: "Trunk"),
+]
