@@ -14,6 +14,7 @@
 		494E12732A49B28B00E438CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12722A49B28B00E438CD /* CategoryView.swift */; };
 		494E12752A49B84900E438CD /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12742A49B84900E438CD /* ActionButton.swift */; };
 		494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12792A4A2FF800E438CD /* ActionItem.swift */; };
+		49823EFF2A4F4059008F7CAF /* CarControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49823EFE2A4F4059008F7CAF /* CarControlsView.swift */; };
 		49A206622A486D07005014D4 /* TeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206612A486D07005014D4 /* TeslaApp.swift */; };
 		49A206642A486D07005014D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206632A486D07005014D4 /* ContentView.swift */; };
 		49A206662A486D08005014D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A206652A486D08005014D4 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		494E12722A49B28B00E438CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		494E12742A49B84900E438CD /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		494E12792A4A2FF800E438CD /* ActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
+		49823EFE2A4F4059008F7CAF /* CarControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlsView.swift; sourceTree = "<group>"; };
 		49A2065E2A486D07005014D4 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A206612A486D07005014D4 /* TeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaApp.swift; sourceTree = "<group>"; };
 		49A206632A486D07005014D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				494E126E2A499F5F00E438CD /* CategoryHeader.swift */,
 				494E12722A49B28B00E438CD /* CategoryView.swift */,
 				494C71F32A4CA6EE0057A27E /* AllSettings.swift */,
+				49823EFE2A4F4059008F7CAF /* CarControlsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */,
 				49A206782A489210005014D4 /* GeneralButton.swift in Sources */,
 				494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */,
+				49823EFF2A4F4059008F7CAF /* CarControlsView.swift in Sources */,
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
@@ -355,6 +359,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,6 +390,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

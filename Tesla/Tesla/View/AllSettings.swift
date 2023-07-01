@@ -12,11 +12,13 @@ struct AllSettings: View {
         VStack {
             CategoryHeader(title: "All Settings", showEdit: false)
             LazyVGrid(columns: [GridItem(.fixed(170)), GridItem(.fixed(170))]) {
-                SettingCard(
-                    icon: "car.fill",
-                    label: "Controls",
-                    message: "Car Locked"
-                )
+                NavigationLink(destination: CarControlsView()) {
+                    SettingCard(
+                        icon: "car.fill",
+                        label: "Controls",
+                        message: "Car Locked"
+                    )
+                }
                 SettingCard(
                     icon: "fanblades.fill",
                     label: "Climate",
