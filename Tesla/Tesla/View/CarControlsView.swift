@@ -27,6 +27,7 @@ struct CarControlsView: View {
                         .fontWeight(.semibold)
                 }
                 CustomDivider()
+                CarLockButton()
             }
             .padding()
         }
