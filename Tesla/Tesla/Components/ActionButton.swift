@@ -17,6 +17,7 @@ struct ActionButton: View {
             
             Text(label)
                 .font(.system(size: 12, weight: .semibold, design: .default))
+                .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
         }
         .frame(width: 72, height: 84)

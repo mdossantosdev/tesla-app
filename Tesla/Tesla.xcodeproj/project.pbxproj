@@ -16,6 +16,7 @@
 		494E127A2A4A2FF800E438CD /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E12792A4A2FF800E438CD /* ActionItem.swift */; };
 		49823EFF2A4F4059008F7CAF /* CarControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49823EFE2A4F4059008F7CAF /* CarControlsView.swift */; };
 		49823F012A507CF3008F7CAF /* CarLockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49823F002A507CF3008F7CAF /* CarLockButton.swift */; };
+		49823F032A509B50008F7CAF /* CarControlActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49823F022A509B50008F7CAF /* CarControlActions.swift */; };
 		49A206622A486D07005014D4 /* TeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206612A486D07005014D4 /* TeslaApp.swift */; };
 		49A206642A486D07005014D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206632A486D07005014D4 /* ContentView.swift */; };
 		49A206662A486D08005014D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A206652A486D08005014D4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		494E12792A4A2FF800E438CD /* ActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
 		49823EFE2A4F4059008F7CAF /* CarControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlsView.swift; sourceTree = "<group>"; };
 		49823F002A507CF3008F7CAF /* CarLockButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLockButton.swift; sourceTree = "<group>"; };
+		49823F022A509B50008F7CAF /* CarControlActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlActions.swift; sourceTree = "<group>"; };
 		49A2065E2A486D07005014D4 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A206612A486D07005014D4 /* TeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaApp.swift; sourceTree = "<group>"; };
 		49A206632A486D07005014D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				494E12722A49B28B00E438CD /* CategoryView.swift */,
 				494C71F32A4CA6EE0057A27E /* AllSettings.swift */,
 				49823EFE2A4F4059008F7CAF /* CarControlsView.swift */,
+				49823F022A509B50008F7CAF /* CarControlActions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
+				49823F032A509B50008F7CAF /* CarControlActions.swift in Sources */,
 				494C71F42A4CA6EE0057A27E /* AllSettings.swift in Sources */,
 				49823F012A507CF3008F7CAF /* CarLockButton.swift in Sources */,
 				494C71F62A4CAE070057A27E /* SettingCard.swift in Sources */,
