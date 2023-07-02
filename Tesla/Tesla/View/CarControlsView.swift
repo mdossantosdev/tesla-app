@@ -28,6 +28,10 @@ struct CarControlsView: View {
                 }
                 CustomDivider()
                 CarLockButton()
+                CustomDivider()
+                CarControlActions()
+                CustomDivider()
+                ValetModeView()
             }
             .padding()
         }

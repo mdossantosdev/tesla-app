@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4934E9D42A518A260097CDFA /* ValetModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934E9D32A518A260097CDFA /* ValetModeView.swift */; };
 		494C71F42A4CA6EE0057A27E /* AllSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F32A4CA6EE0057A27E /* AllSettings.swift */; };
 		494C71F62A4CAE070057A27E /* SettingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F52A4CAE070057A27E /* SettingCard.swift */; };
 		494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F72A4CE43D0057A27E /* ReorderButton.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4934E9D32A518A260097CDFA /* ValetModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValetModeView.swift; sourceTree = "<group>"; };
 		494C71F32A4CA6EE0057A27E /* AllSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettings.swift; sourceTree = "<group>"; };
 		494C71F52A4CAE070057A27E /* SettingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCard.swift; sourceTree = "<group>"; };
 		494C71F72A4CE43D0057A27E /* ReorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderButton.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				494C71F32A4CA6EE0057A27E /* AllSettings.swift */,
 				49823EFE2A4F4059008F7CAF /* CarControlsView.swift */,
 				49823F022A509B50008F7CAF /* CarControlActions.swift */,
+				4934E9D32A518A260097CDFA /* ValetModeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
+				4934E9D42A518A260097CDFA /* ValetModeView.swift in Sources */,
 				49823F032A509B50008F7CAF /* CarControlActions.swift in Sources */,
 				494C71F42A4CA6EE0057A27E /* AllSettings.swift in Sources */,
 				49823F012A507CF3008F7CAF /* CarLockButton.swift in Sources */,

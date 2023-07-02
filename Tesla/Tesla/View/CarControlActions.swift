@@ -30,6 +30,7 @@ struct CarControlActions: View {
                 }
             }
         }
+        .padding()
     }
 }
 
