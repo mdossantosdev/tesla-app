@@ -38,7 +38,6 @@ struct CarControlsView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("DarkGray"))
         .foregroundColor(Color.white)
-        .navigationTitle("Tesla")
         .toolbar(.hidden)
     }
 }

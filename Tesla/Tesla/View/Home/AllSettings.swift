@@ -25,11 +25,13 @@ struct AllSettings: View {
                     message: "Interior 22°C",
                     backgroundColor: Color("Blue")
                 )
-                SettingCard(
-                    icon: "location.fill",
-                    label: "Location",
-                    message: "Paris"
-                )
+                NavigationLink(destination: LocationView()) {
+                    SettingCard(
+                        icon: "location.fill",
+                        label: "Location",
+                        message: "Paris"
+                    )                    
+                }
                 SettingCard(
                     icon: "shield.checkerboard",
                     label: "Security",

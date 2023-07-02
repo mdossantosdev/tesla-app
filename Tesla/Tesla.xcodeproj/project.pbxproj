@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4934E9D42A518A260097CDFA /* ValetModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934E9D32A518A260097CDFA /* ValetModeView.swift */; };
+		4934E9D92A51AC990097CDFA /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934E9D82A51AC990097CDFA /* LocationView.swift */; };
 		494C71F42A4CA6EE0057A27E /* AllSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F32A4CA6EE0057A27E /* AllSettings.swift */; };
 		494C71F62A4CAE070057A27E /* SettingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F52A4CAE070057A27E /* SettingCard.swift */; };
 		494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C71F72A4CE43D0057A27E /* ReorderButton.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		4934E9D32A518A260097CDFA /* ValetModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValetModeView.swift; sourceTree = "<group>"; };
+		4934E9D82A51AC990097CDFA /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		494C71F32A4CA6EE0057A27E /* AllSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettings.swift; sourceTree = "<group>"; };
 		494C71F52A4CAE070057A27E /* SettingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCard.swift; sourceTree = "<group>"; };
 		494C71F72A4CE43D0057A27E /* ReorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderButton.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 				4934E9D32A518A260097CDFA /* ValetModeView.swift */,
 			);
 			path = "Car Control";
+			sourceTree = "<group>";
+		};
+		4934E9D72A51AC810097CDFA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4934E9D82A51AC990097CDFA /* LocationView.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		494E12782A4A2FC900E438CD /* Model */ = {
@@ -157,6 +167,7 @@
 		49A206742A4888F1005014D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4934E9D72A51AC810097CDFA /* Location */,
 				4934E9D52A51A8DE0097CDFA /* Home */,
 				4934E9D62A51A9A80097CDFA /* Car Control */,
 			);
@@ -250,6 +261,7 @@
 				494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */,
 				49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */,
 				494E12732A49B28B00E438CD /* CategoryView.swift in Sources */,
+				4934E9D92A51AC990097CDFA /* LocationView.swift in Sources */,
 				494E12752A49B84900E438CD /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
