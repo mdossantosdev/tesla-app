@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct LocationView: View {
     @Environment(\.dismiss) private var dismiss
     
+    @State private var location = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 48.8592, longitude: 2.2938),
+        span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+    )
+    
     var body: some View {
         ZStack {
+            Map(coordinateRegion: $location)
+            
             VStack {
                 HStack {
                     Button(action: {
