@@ -25,9 +25,6 @@ struct ValetModeView: View {
                     .foregroundColor(Color("Green"))
             }
         }
-            
-
-            
     }
 }
 

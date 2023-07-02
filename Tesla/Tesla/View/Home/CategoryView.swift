@@ -29,6 +29,9 @@ struct CategoryView: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView(title: "Quick Shortcuts", showEdit: false, actionItems: quickShortcuts)
+        ZStack {
+            Color("DarkGray").ignoresSafeArea()
+            CategoryView(title: "Quick Shortcuts", showEdit: false, actionItems: quickShortcuts)
+        }
     }
 }
