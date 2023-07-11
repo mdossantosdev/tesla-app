@@ -28,6 +28,13 @@ struct LocationView: View {
                 }
             )
             
+            LinearGradient(
+                gradient: Gradient(colors: [Color("DarkGray"), Color.clear, Color.clear]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .allowsHitTesting(false)
+            
             VStack {
                 HStack {
                     Button(action: {
