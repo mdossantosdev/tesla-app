@@ -13,12 +13,20 @@ struct LocationView: View {
     
     @State private var location = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 48.8592, longitude: 2.2938),
-        span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        span: MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
     )
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $location)
+            Map(
+                coordinateRegion: $location,
+                annotationItems: carLocations,
+                annotationContent: { location in
+                    MapAnnotation(coordinate: location.coordinate) {
+                        CarPin()
+                    }
+                }
+            )
             
             VStack {
                 HStack {

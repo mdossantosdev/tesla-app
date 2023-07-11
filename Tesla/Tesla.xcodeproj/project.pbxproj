@@ -29,6 +29,7 @@
 		49A206782A489210005014D4 /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206772A489210005014D4 /* GeneralButton.swift */; };
 		49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206792A489652005014D4 /* CustomDivider.swift */; };
 		49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2067B2A4898C7005014D4 /* CarSection.swift */; };
+		49FAFBB92A5DCFBB00D35C5E /* CarPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		49A206772A489210005014D4 /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		49A206792A489652005014D4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		49A2067B2A4898C7005014D4 /* CarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSection.swift; sourceTree = "<group>"; };
+		49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				494C71F52A4CAE070057A27E /* SettingCard.swift */,
 				494C71F72A4CE43D0057A27E /* ReorderButton.swift */,
 				49823F002A507CF3008F7CAF /* CarLockButton.swift */,
+				49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				494E126F2A499F5F00E438CD /* CategoryHeader.swift in Sources */,
 				49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */,
 				494E12732A49B28B00E438CD /* CategoryView.swift in Sources */,
+				49FAFBB92A5DCFBB00D35C5E /* CarPin.swift in Sources */,
 				4934E9D92A51AC990097CDFA /* LocationView.swift in Sources */,
 				494E12752A49B84900E438CD /* ActionButton.swift in Sources */,
 			);

@@ -16,3 +16,5 @@ struct CarLocation: Identifiable {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }
+
+let carLocations: [CarLocation] = [CarLocation(latitude: 48.8592, longitude: 2.2938)]
