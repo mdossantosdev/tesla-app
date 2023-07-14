@@ -12,7 +12,7 @@ struct LocationView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var location = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 48.8592, longitude: 2.2938),
+        center: CLLocationCoordinate2D(latitude: 48.8664, longitude: 2.3053),
         span: MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
     )
     
@@ -27,6 +27,8 @@ struct LocationView: View {
                     }
                 }
             )
+            
+            LocationPanel()
             
             LinearGradient(
                 gradient: Gradient(colors: [Color("DarkGray"), Color.clear, Color.clear]),

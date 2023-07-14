@@ -30,6 +30,7 @@
 		49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206792A489652005014D4 /* CustomDivider.swift */; };
 		49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2067B2A4898C7005014D4 /* CarSection.swift */; };
 		49FAFBB92A5DCFBB00D35C5E /* CarPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */; };
+		49FAFBBB2A5DE00D00D35C5E /* LocationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAFBBA2A5DE00D00D35C5E /* LocationPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		49A206792A489652005014D4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		49A2067B2A4898C7005014D4 /* CarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSection.swift; sourceTree = "<group>"; };
 		49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPin.swift; sourceTree = "<group>"; };
+		49FAFBBA2A5DE00D00D35C5E /* LocationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4934E9D82A51AC990097CDFA /* LocationView.swift */,
+				49FAFBBA2A5DE00D00D35C5E /* LocationPanel.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A206642A486D07005014D4 /* ContentView.swift in Sources */,
+				49FAFBBB2A5DE00D00D35C5E /* LocationPanel.swift in Sources */,
 				494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */,
 				4934E9DB2A51E3200097CDFA /* Location.swift in Sources */,
 				49A206782A489210005014D4 /* GeneralButton.swift in Sources */,

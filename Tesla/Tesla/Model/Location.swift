@@ -17,4 +17,4 @@ struct CarLocation: Identifiable {
     }
 }
 
-let carLocations: [CarLocation] = [CarLocation(latitude: 48.8592, longitude: 2.2938)]
+let carLocations: [CarLocation] = [CarLocation(latitude: 48.8664, longitude: 2.3053)]
