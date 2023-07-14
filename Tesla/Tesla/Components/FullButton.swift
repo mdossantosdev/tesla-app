@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FullButton: View {
     let text: String
-    let icon: String
+    var icon: String = ""
     
     var body: some View {
         if icon.isEmpty {
@@ -53,7 +53,7 @@ struct FullButton_Previews: PreviewProvider {
         ZStack {
             Color("DarkGray").ignoresSafeArea()
             
-            FullButton(text: "", icon: "arrow.up")
+            FullButton(text: "Full Button")
         }
     }
 }

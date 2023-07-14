@@ -26,15 +26,34 @@ struct LocationPanel: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Summon")
-                        .font(.headline)
-                        .fontWeight(.semibold)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Summon")
+                            .font(.headline)
+                            .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        Text("Press and hold controls to move vehicle")
+                            .font(.footnote)
+                            .opacity(0.5)
+                    }
                     
-                    Text("Press and hold controls to move vehicle")
-                        .font(.footnote)
-                        .opacity(0.5)
+                    CustomDivider()
+                    
+                    Button(action: {}) {
+                        FullButton(text: "Go to Target")
+                    }
+                    
+                    HStack {
+                        Button(action: {}) {
+                            FullButton(text: "Forward", icon: "arrow.up")
+                        }
+                        Button(action: {}) {
+                            FullButton(text: "Backward", icon: "arrow.down")
+                        }
+                    }
                 }
+                
+                
                 
             }
             .padding()
