@@ -13,7 +13,7 @@ struct CarSection: View {
             HStack(alignment: .center) {
                 HStack {
                     Image(systemName: "battery.75")
-                    Text("423 Km".uppercased())
+                    Text("420 Km".uppercased())
                 }
                 .font(.system(size: 14, weight: .semibold, design: .rounded))
                 .foregroundColor(Color("Green"))
