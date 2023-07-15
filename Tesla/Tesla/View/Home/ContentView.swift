@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var openVoiceCommand = false
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -34,7 +36,13 @@ struct ContentView: View {
                     .padding()
                 }
                 
-                VoiceCommandButton()
+                VoiceCommandButton(isOpen: $openVoiceCommand)
+                
+                if openVoiceCommand {
+                    VoiceCommandView(text: "Go to Eiffel Tower", isOpen: $openVoiceCommand)
+                        .zIndex(1)
+                        .transition(.move(edge: .bottom))
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("DarkGray"))

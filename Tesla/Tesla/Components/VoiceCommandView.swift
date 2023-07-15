@@ -33,7 +33,11 @@ struct VoiceCommandView: View {
                 
                 Spacer()
                 
-                Button(action: {}) {
+                Button(action: {
+                    withAnimation {
+                        isOpen = false
+                    }
+                }) {
                     Image(systemName: "xmark")
                         .font(.system(size: 24, weight: .semibold, design: .default))
                         .frame(width: 64, height: 64)
