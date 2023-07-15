@@ -38,6 +38,17 @@ struct ContentView: View {
                 
                 VoiceCommandButton(isOpen: $openVoiceCommand)
                 
+                if (openVoiceCommand) {
+                    Color.black.opacity(0.5)
+                        .edgesIgnoringSafeArea(.all)
+                        .transition(.opacity)
+                        .onTapGesture {
+                            withAnimation {
+                                openVoiceCommand = false
+                            }
+                        }
+                }
+                
                 if openVoiceCommand {
                     VoiceCommandView(text: "Go to Eiffel Tower", isOpen: $openVoiceCommand)
                         .zIndex(1)
