@@ -72,6 +72,7 @@ struct MediaPlayerView: View {
                         }
                     }
                     Spacer()
+                    
                     HStack(alignment: .center, spacing: 20) {
                         Button(action: {}) {
                             Image(systemName: "minus")
@@ -96,7 +97,7 @@ struct MediaPlayerView: View {
             .frame(maxWidth: .infinity)
             .background(Color("DarkGray"))
             .foregroundColor(Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .cornerRadius(16, corners: [.topLeft, .topRight])
         }
         .edgesIgnoringSafeArea(.bottom)
     }

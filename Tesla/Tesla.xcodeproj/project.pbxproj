@@ -24,6 +24,7 @@
 		499B085F2A61B7C700740F69 /* ActionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B085E2A61B7C700740F69 /* ActionNotification.swift */; };
 		499B08612A61C67000740F69 /* VoiceCommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B08602A61C67000740F69 /* VoiceCommandView.swift */; };
 		499B08642A61D41100740F69 /* MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B08632A61D41100740F69 /* MediaPlayerView.swift */; };
+		499B08672A6227E700740F69 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B08662A6227E700740F69 /* View+Extensions.swift */; };
 		49A206622A486D07005014D4 /* TeslaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206612A486D07005014D4 /* TeslaApp.swift */; };
 		49A206642A486D07005014D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206632A486D07005014D4 /* ContentView.swift */; };
 		49A206662A486D08005014D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A206652A486D08005014D4 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		499B085E2A61B7C700740F69 /* ActionNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionNotification.swift; sourceTree = "<group>"; };
 		499B08602A61C67000740F69 /* VoiceCommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandView.swift; sourceTree = "<group>"; };
 		499B08632A61D41100740F69 /* MediaPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerView.swift; sourceTree = "<group>"; };
+		499B08662A6227E700740F69 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		49A2065E2A486D07005014D4 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A206612A486D07005014D4 /* TeslaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaApp.swift; sourceTree = "<group>"; };
 		49A206632A486D07005014D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = MediaPlayer;
 			sourceTree = "<group>";
 		};
+		499B08652A6227AD00740F69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				499B08662A6227E700740F69 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		49A206552A486D07005014D4 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 				494E12782A4A2FC900E438CD /* Model */,
 				49A206712A488685005014D4 /* Components */,
 				49A206742A4888F1005014D4 /* View */,
+				499B08652A6227AD00740F69 /* Extensions */,
 				49A206652A486D08005014D4 /* Assets.xcassets */,
 				49A206672A486D08005014D4 /* Preview Content */,
 			);
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A206642A486D07005014D4 /* ContentView.swift in Sources */,
+				499B08672A6227E700740F69 /* View+Extensions.swift in Sources */,
 				499B08612A61C67000740F69 /* VoiceCommandView.swift in Sources */,
 				49FAFBBB2A5DE00D00D35C5E /* LocationPanel.swift in Sources */,
 				494C71F82A4CE43D0057A27E /* ReorderButton.swift in Sources */,
