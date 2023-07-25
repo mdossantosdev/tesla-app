@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var openVoiceCommand = false
+    @State private var openCharging = false
     
     var body: some View {
         NavigationStack {
@@ -17,7 +18,7 @@ struct ContentView: View {
                     VStack(spacing: 16) {
                         HomeHeader()
                         CustomDivider()
-                        CarSection()
+                        CarSection(chargingLevel: 420, openCharging: $openCharging)
                         CustomDivider()
                         CategoryView(
                             title: "Quick Shortcuts",
@@ -38,19 +39,26 @@ struct ContentView: View {
                 
                 VoiceCommandButton(isOpen: $openVoiceCommand)
                 
-                if (openVoiceCommand) {
+                if (openVoiceCommand || openCharging) {
                     Color.black.opacity(0.5)
                         .edgesIgnoringSafeArea(.all)
                         .transition(.opacity)
                         .onTapGesture {
                             withAnimation {
                                 openVoiceCommand = false
+                                openCharging = false
                             }
                         }
                 }
                 
                 if openVoiceCommand {
                     VoiceCommandView(text: "Go to Eiffel Tower", isOpen: $openVoiceCommand)
+                        .zIndex(1)
+                        .transition(.move(edge: .bottom))
+                }
+                
+                if openCharging {
+                    ChargingView()
                         .zIndex(1)
                         .transition(.move(edge: .bottom))
                 }

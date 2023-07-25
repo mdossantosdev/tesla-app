@@ -29,7 +29,7 @@ struct VoiceCommandButton: View {
                         .foregroundColor(Color("DarkGray"))
                         .clipShape(Circle())
                         .padding()
-                    .shadow(radius: 10)
+                        .shadow(radius: 10)
                 }
             }
         }
