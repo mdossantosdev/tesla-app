@@ -13,11 +13,13 @@ struct ActionItem: Hashable {
 }
 
 let quickShortcuts: [ActionItem] = [
-    ActionItem(icon: "bolt.fill", label: "Charging"),
     ActionItem(icon: "fanblades.fill", label: "Fan On"),
-    ActionItem(icon: "play.fill", label: "Media Controls"),
     ActionItem(icon: "bolt.car.fill", label: "Close Charge Port"),
 ]
+
+let chargingShortcut = ActionItem(icon: "bolt.fill", label: "Charging")
+
+let mediaShortcut = ActionItem(icon: "play.fill", label: "Media Controls")
 
 let recentActions: [ActionItem] = [
     ActionItem(icon: "arrow.up.square", label: "Open Trunk"),

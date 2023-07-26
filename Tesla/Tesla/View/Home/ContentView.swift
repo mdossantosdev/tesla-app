@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var openVoiceCommand = false
     @State private var openCharging = false
+    @State private var openMedia = false
+    @State private var actionText = ""
+    @State private var actionIcon = ""
+    @State private var openAction = false
     
     var body: some View {
         NavigationStack {
@@ -23,12 +27,22 @@ struct ContentView: View {
                         CategoryView(
                             title: "Quick Shortcuts",
                             showEdit: true,
-                            actionItems: quickShortcuts
+                            actionItems: quickShortcuts,
+                            openAction: $openAction,
+                            actionText: $actionText,
+                            actionIcon: $actionIcon,
+                            openCharging: $openCharging,
+                            openMedia: $openMedia
                         )
                         CustomDivider()
                         CategoryView(
                             title: "Recent Actions",
-                            actionItems: recentActions
+                            actionItems: recentActions,
+                            openAction: $openAction,
+                            actionText: $actionText,
+                            actionIcon: $actionIcon,
+                            openCharging: $openCharging,
+                            openMedia: $openMedia
                         )
                         CustomDivider()
                         AllSettings()
@@ -39,7 +53,7 @@ struct ContentView: View {
                 
                 VoiceCommandButton(isOpen: $openVoiceCommand)
                 
-                if (openVoiceCommand || openCharging) {
+                if (openVoiceCommand || openCharging || openMedia) {
                     Color.black.opacity(0.5)
                         .edgesIgnoringSafeArea(.all)
                         .transition(.opacity)
@@ -47,6 +61,7 @@ struct ContentView: View {
                             withAnimation {
                                 openVoiceCommand = false
                                 openCharging = false
+                                openMedia = false
                             }
                         }
                 }
@@ -59,6 +74,12 @@ struct ContentView: View {
                 
                 if openCharging {
                     ChargingView()
+                        .zIndex(1)
+                        .transition(.move(edge: .bottom))
+                }
+                
+                if openMedia {
+                    MediaPlayerView()
                         .zIndex(1)
                         .transition(.move(edge: .bottom))
                 }
