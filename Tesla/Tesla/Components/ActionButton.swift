@@ -20,7 +20,7 @@ struct ActionButton: View {
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
         }
-        .frame(width: 72, height: 84)
+        .frame(width: 72)
     }
 }
 
@@ -29,7 +29,7 @@ struct ActionButton_Previews: PreviewProvider {
         ZStack {
             Color("DarkGray").ignoresSafeArea()
             
-            ActionButton(icon: "bolt.fill", label: "Charging")
+            ActionButton(icon: "play.fill", label: "Media Controls")
         }
     }
 }

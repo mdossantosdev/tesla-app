@@ -26,19 +26,31 @@ struct CategoryView: View {
                 HStack(alignment: .top, spacing: 10) {
                     if title == "Quick Shortcuts" {
                         Button(action: {
-                            openCharging = true
+                            withAnimation {
+                                openCharging = true
+                            }
                         }) {
                             ActionButton(icon: chargingShortcut.icon, label: chargingShortcut.label)
                         }
                         Button(action: {
-                            openMedia = true
+                            withAnimation {
+                                openMedia = true
+                            }
                         }) {
                             ActionButton(icon: mediaShortcut.icon, label: mediaShortcut.label)
                         }
                     }
                     
                     ForEach(actionItems, id: \.self) { item in
-                        ActionButton(icon: item.icon, label: item.label)
+                        Button(action: {
+                            withAnimation {
+                                openAction = true
+                            }
+                            actionText = item.label
+                            actionIcon = item.icon
+                        }) {
+                            ActionButton(icon: item.icon, label: item.label)
+                        }
                     }
                 }
             }

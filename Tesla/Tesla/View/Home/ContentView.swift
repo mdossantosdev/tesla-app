@@ -53,7 +53,7 @@ struct ContentView: View {
                 
                 VoiceCommandButton(isOpen: $openVoiceCommand)
                 
-                if (openVoiceCommand || openCharging || openMedia) {
+                if (openVoiceCommand || openCharging || openMedia || openAction) {
                     Color.black.opacity(0.5)
                         .edgesIgnoringSafeArea(.all)
                         .transition(.opacity)
@@ -62,6 +62,7 @@ struct ContentView: View {
                                 openVoiceCommand = false
                                 openCharging = false
                                 openMedia = false
+                                openAction = false
                             }
                         }
                 }
@@ -80,6 +81,12 @@ struct ContentView: View {
                 
                 if openMedia {
                     MediaPlayerView()
+                        .zIndex(1)
+                        .transition(.move(edge: .bottom))
+                }
+                
+                if openAction {
+                    ActionNotification(icon: actionIcon, text: actionText, isOpen: $openAction)
                         .zIndex(1)
                         .transition(.move(edge: .bottom))
                 }
