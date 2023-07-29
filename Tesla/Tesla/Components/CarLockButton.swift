@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct CarLockButton: View {
+    @State var isLocked: Bool = true
+    
     var body: some View {
-        Button(action: {}) {
-            Label("Unlock Car", systemImage: "lock.fill")
-                .font(.system(size: 14, weight: .medium, design: .default))
+        Button(action: {
+            withAnimation {
+                isLocked = !isLocked
+            }
+        }) {
+            Label(isLocked ? "Unlock Car" : "Lock Car", systemImage: isLocked ? "lock.fill" : "lock.open.fill")
+                .font(.system(size: 16, weight: .bold, design: .default))
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(Color.white.opacity(0.05))
