@@ -12,6 +12,7 @@ struct MediaPlayerView: View {
     let duration: Double = 4.17
     let artist: String = "Kavinsky"
     let album: String = "Outrun"
+    let coverURL: String = "https://upload.wikimedia.org/wikipedia/en/a/a2/Kavinsky_-_OutRun.png"
     
     @State private var value: Double = 1.55
     
@@ -21,10 +22,20 @@ struct MediaPlayerView: View {
             
             VStack(spacing: 20) {
                 HStack(alignment: .center, spacing: 10) {
-                    Color("Green")
-                        .frame(width: 64, height: 64)
-                        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                        .cornerRadius(10)
+                    AsyncImage(url: URL(string: coverURL)) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } placeholder: {
+                        ZStack {
+                            Color("Green")
+                            Image(systemName: "photo.fill")
+                                .foregroundColor(Color("DarkGray"))
+                        }
+                    }
+                    .frame(width: 64, height: 64)
+                    .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                    .cornerRadius(10)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         Text(title)
