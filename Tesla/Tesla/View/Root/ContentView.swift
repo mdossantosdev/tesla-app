@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isActive = false
+    
     var body: some View {
-        HomeView()
+        if isActive {
+            HomeView()
+        } else {
+            SplashView(isActive: $isActive)
+        }
     }
 }
 
