@@ -30,7 +30,7 @@ struct LocationPanel: View {
                         Text("Summon")
                             .font(.headline)
                             .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         
                         Text("Press and hold controls to move vehicle")
                             .font(.footnote)
@@ -60,6 +60,7 @@ struct LocationPanel: View {
             .frame(maxWidth: .infinity)
             .background(Color("DarkGray"))
             .foregroundColor(Color.white)
+            .cornerRadius(16, corners: [.topLeft, .topRight])
         }
     }
 }

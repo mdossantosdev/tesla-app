@@ -35,6 +35,7 @@
 		49A206782A489210005014D4 /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206772A489210005014D4 /* GeneralButton.swift */; };
 		49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A206792A489652005014D4 /* CustomDivider.swift */; };
 		49A2067C2A4898C7005014D4 /* CarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2067B2A4898C7005014D4 /* CarSection.swift */; };
+		49AAAB8A2A76905800D776DC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAAB892A76905800D776DC /* HomeView.swift */; };
 		49FAFBB92A5DCFBB00D35C5E /* CarPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */; };
 		49FAFBBB2A5DE00D00D35C5E /* LocationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAFBBA2A5DE00D00D35C5E /* LocationPanel.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		49A206772A489210005014D4 /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		49A206792A489652005014D4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		49A2067B2A4898C7005014D4 /* CarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSection.swift; sourceTree = "<group>"; };
+		49AAAB892A76905800D776DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		49FAFBB82A5DCFBB00D35C5E /* CarPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPin.swift; sourceTree = "<group>"; };
 		49FAFBBA2A5DE00D00D35C5E /* LocationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +89,7 @@
 		4934E9D52A51A8DE0097CDFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				49A206632A486D07005014D4 /* ContentView.swift */,
+				49AAAB892A76905800D776DC /* HomeView.swift */,
 				49A206752A488D78005014D4 /* HomeHeader.swift */,
 				49A2067B2A4898C7005014D4 /* CarSection.swift */,
 				494E126E2A499F5F00E438CD /* CategoryHeader.swift */,
@@ -216,6 +218,7 @@
 		49A206742A4888F1005014D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49AAAB8B2A7691D000D776DC /* Root */,
 				499B08682A622BA500740F69 /* Charging */,
 				499B08622A61D3A400740F69 /* MediaPlayer */,
 				4934E9D72A51AC810097CDFA /* Location */,
@@ -223,6 +226,14 @@
 				4934E9D62A51A9A80097CDFA /* Car Control */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		49AAAB8B2A7691D000D776DC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				49A206632A486D07005014D4 /* ContentView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				49823EFF2A4F4059008F7CAF /* CarControlsView.swift in Sources */,
 				49A2067A2A489652005014D4 /* CustomDivider.swift in Sources */,
 				49A206762A488D78005014D4 /* HomeHeader.swift in Sources */,
+				49AAAB8A2A76905800D776DC /* HomeView.swift in Sources */,
 				49A206732A4886E6005014D4 /* VoiceCommandButton.swift in Sources */,
 				4934E9D42A518A260097CDFA /* ValetModeView.swift in Sources */,
 				49823F032A509B50008F7CAF /* CarControlActions.swift in Sources */,
@@ -454,12 +466,11 @@
 				DEVELOPMENT_TEAM = 7AP6A6Q5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tesla/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Tesla;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,12 +496,11 @@
 				DEVELOPMENT_TEAM = 7AP6A6Q5MX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tesla/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Tesla;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

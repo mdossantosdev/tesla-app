@@ -27,6 +27,7 @@ struct LocationView: View {
                     }
                 }
             )
+            .preferredColorScheme(.light)
             
             LocationPanel()
             
