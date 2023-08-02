@@ -1,5 +1,11 @@
 <h1 align="center">Tesla App UI</h1>
 
+## 📱 Demo
+
+<div align="center">
+  <video src="https://github.com/mdossantosdev/tesla-app/assets/25856076/95707c7a-400f-435c-a1cd-d59bc5b702fd" />
+</div>
+
 ## 🛠️ Technologies
 
 - iOS 16 / Xcode 14
